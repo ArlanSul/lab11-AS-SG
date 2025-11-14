@@ -1,6 +1,9 @@
+# https://github.com/ArlanSul/lab11-AS-SG
+# Partner 1: Arlan Suleimanov
+# Partner 2: Santiago Gomez
+
 import unittest
 from calculator import *
-
 
 class TestCalculator(unittest.TestCase):
     ######## Partner 2
@@ -43,12 +46,12 @@ class TestCalculator(unittest.TestCase):
             div(0, 0)
 
     def test_logarithm(self):  # 3 assertions
-        self.assertEqual(logarithm(8, 2), 3)
-        self.assertEqual(logarithm(9, 3), 2)
-        self.assertEqual(logarithm(1000, 10), 3)
+        self.assertAlmostEqual(logarithm(2, 8), 3)
+        self.assertAlmostEqual(logarithm(3, 9), 2)
+        self.assertAlmostEqual(logarithm(10, 1000), 3)
 
     def test_log_invalid_base(self):  # 1 assertion
-        with self.assertRaises(ZeroDivisionError):
+        with self.assertRaises(ValueError):
             logarithm(0, 1)
         with self.assertRaises(ValueError):
             logarithm(1, 1)
