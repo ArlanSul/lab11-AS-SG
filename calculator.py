@@ -1,3 +1,7 @@
+# https://github.com/ArlanSul/lab11-AS-SG
+# Partner 1: Arlan Suleimanov
+# Partner 2: Santiago Gomez
+
 import math
 
 """
